@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.binc.nutrilist.utils.Constants
 
 class SplashActivity : AppCompatActivity() {
 
@@ -31,6 +30,7 @@ class SplashActivity : AppCompatActivity() {
                 super.onAnimationEnd(drawable)
                 val signinActivity = Intent(this@SplashActivity, SigninActivity::class.java)
                 startActivity(signinActivity)
+                finish()
             }
         })
         dr.start()
