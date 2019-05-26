@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Nutrilist</string>
+    <string name="or">-- or --</string>
+    <string name="signup">
+        <u>sign-up</u>
+    </string>
+    <string name="btn_signup">signup</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
 </resources>
