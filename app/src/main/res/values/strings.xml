@@ -9,4 +9,6 @@
     <string name="email">email</string>
     <string name="password">password</string>
     <string name="login">login</string>
+    <string name="signup_validation_err">Either email or password is incorrect</string>
+    <string name="authentication_failed">Authentication Failed</string>
 </resources>
