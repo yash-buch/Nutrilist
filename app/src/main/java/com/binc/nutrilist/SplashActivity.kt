@@ -12,6 +12,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity : AppCompatActivity() {
+    var isBackpressed: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +29,18 @@ class SplashActivity : AppCompatActivity() {
         object : Animatable2.AnimationCallback() {
             override fun onAnimationEnd(drawable: Drawable?) {
                 super.onAnimationEnd(drawable)
-                val signinActivity = Intent(this@SplashActivity, SigninActivity::class.java)
-                startActivity(signinActivity)
-                finish()
+                if(!isBackpressed) {
+                    val signinActivity = Intent(this@SplashActivity, SigninActivity::class.java)
+                    startActivity(signinActivity)
+                    finish()
+                }
             }
         })
         dr.start()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        isBackpressed = true
     }
 }
