@@ -11,4 +11,9 @@
     <string name="login">login</string>
     <string name="signup_validation_err">Either email or password is incorrect</string>
     <string name="authentication_failed">Authentication Failed</string>
+    <string name="age">Age:</string>
+    <string name="sex">Sex:</string>
+    <string name="doctor">Doctor:</string>
+    <string name="restriction">Restriction</string>
+    <string name="tenToHundred">10-100</string>
 </resources>
